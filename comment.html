@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comment</title>
+</head>
+
+<body>
+    <h2>Your Comment</h2>
+    <section>
+        <h4>your comment please</h4>
+        <div id="comment-container">
+            <p>wdmwldkwld wkdmwdwodw dwdmwdowd wwewoekeoekoeke emekwo wmedlod
+                ldld,ld,le dkdmwdpsdkill jokwjii ijfj ii]jm
+                mljkkalfjjmjgjhjghjikolp;;;okplp'l d sssswlms</p>
+            <p>skljlkjdlkjlkdsjlkfjsldkj slfjlkjf lkjjkljoii jiji ijijikljfieffnjkn
+                ijeijeiif</p>
+        </div>
+        <div>
+            <p>write your comment in the below box</p>
+            <textarea name="" id="text-box" cols="50" rows="10"></textarea><br>
+            <button id="box-sub">submit</button>
+        </div>
+    </section>
+    <script>
+        // 1st step id call and add event
+
+        document.getElementById('box-sub').addEventListener('click', function () {
+            // console.log('clicked');
+
+            // 2nd get user comment
+            const writeComment = document.getElementById('text-box');
+            // console.log(writeComment.value);
+            const getcomment = writeComment.value;
+
+            // 3rd create element P for new comment
+            const newElement = document.createElement('p');
+            newElement.innerText = getcomment;
+            // akhane amra writeComment.value likhe dite pridirect
+            // 4th add child in the parent container
+            const parentcomment = document.getElementById('comment-container');
+            parentcomment.appendChild(newElement);
+
+            // 5th unbox the comment box after writing
+
+            writeComment.value = '';
+
+        });
+    </script>
+
+</body>
+
+</html>

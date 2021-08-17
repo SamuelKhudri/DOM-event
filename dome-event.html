@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WElcome to my DOM world</title>
+</head>
+
+<body>
+    <h3>I love you</h3>
+    <button onclick="alert(10)">click me</button>
+    <button onclick="console.log(10)">click on me</button>
+    <button onclick="document.body.style.backgroundColor ='red'">click on red</button>
+    <button onclick="makeYellow()">Bby yellow bby</button>
+    <button id="blue-button">Bby blue here</button>
+    <button id="green-button">Bby green here</button>
+
+    <script src="dome-event.js"></script>
+    <script>
+        const greenButton = document.getElementById('green-button');
+        greenButton.onclick = function makeGreen() {
+            document.body.style.backgroundColor = 'green';
+        }
+    </script>
+
+</body>
+
+</html>
